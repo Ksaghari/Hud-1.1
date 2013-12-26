@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="dashone.ControlSystemController">
+  <children>
+    <SplitPane dividerPositions="0.8328690807799443" focusTraversable="true" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <SplitPane dividerPositions="0.15008431703204048" focusTraversable="true" orientation="VERTICAL" prefHeight="595.0" prefWidth="1278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                  <children>
+                    <Label layoutX="14.0" layoutY="14.0" prefHeight="60.0" prefWidth="398.0" text="CONTROL SYSTEM" underline="false">
+                      <font>
+                        <Font name="System Bold" size="30.0" />
+                      </font>
+                    </Label>
+                  </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                  <children>
+                    <SplitPane dividerPositions="0.4686028257456829" focusTraversable="true" prefHeight="501.0" prefWidth="1276.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                          <children>
+                            <VBox id="VBox" alignment="CENTER_LEFT" prefHeight="488.0" prefWidth="580.0" spacing="75.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="9.0">
+                              <children>
+                                <HBox id="HBox" alignment="TOP_LEFT" spacing="0.0">
+                                  <children>
+                                    <Label id="drivingMode" text="Driving Mode">
+                                      <font>
+                                        <Font name="System Bold" size="25.0" fx:id="x1" />
+                                      </font>
+                                      <stylesheets>
+                                        <URL value="@controlsystem.css" />
+                                      </stylesheets>
+                                    </Label>
+                                    <Label fx:id="drivingMode" text="">
+                                      <font>
+                                        <Font size="25.0" fx:id="x2" />
+                                      </font>
+                                      <stylesheets>
+                                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                                      </stylesheets>
+                                    </Label>
+                                  </children>
+                                </HBox>
+                                <HBox id="HBox" alignment="TOP_LEFT" spacing="0.0">
+                                  <children>
+                                    <Label id="brakePosition" font="$x1" text="Brake Position">
+                                      <stylesheets>
+                                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                                      </stylesheets>
+                                    </Label>
+                                    <Label fx:id="brakePosition" font="$x2" text="">
+                                      <stylesheets>
+                                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                                      </stylesheets>
+                                    </Label>
+                                  </children>
+                                </HBox>
+                                <HBox id="HBox" alignment="TOP_LEFT" spacing="0.0">
+                                  <children>
+                                    <Label id="clutchStatus" font="$x1" text="Throttle Position">
+                                      <stylesheets>
+                                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                                      </stylesheets>
+                                    </Label>
+                                    <Label fx:id="throttlePosition" font="$x2" text="">
+                                      <stylesheets>
+                                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                                      </stylesheets>
+                                    </Label>
+                                  </children>
+                                </HBox>
+                                <HBox id="HBox" alignment="TOP_LEFT" spacing="0.0">
+                                  <children>
+                                    <Label id="throttlePosition" font="$x1" text="Torque Status">
+                                      <stylesheets>
+                                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                                      </stylesheets>
+                                    </Label>
+                                    <Label fx:id="torqueStatus" font="$x2" text="">
+                                      <stylesheets>
+                                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                                      </stylesheets>
+                                    </Label>
+                                  </children>
+                                </HBox>
+                                <HBox id="HBox" alignment="TOP_LEFT" spacing="0.0">
+                                  <children>
+                                    <Label id="clutchStatus" font="$x1" text="Clutch Status">
+                                      <stylesheets>
+                                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                                      </stylesheets>
+                                    </Label>
+                                    <Label fx:id="clutchStatus" font="$x2" text="">
+                                      <stylesheets>
+                                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                                      </stylesheets>
+                                    </Label>
+                                  </children>
+                                </HBox>
+                              </children>
+                            </VBox>
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                      </items>
+                    </SplitPane>
+                  </children>
+                </AnchorPane>
+              </items>
+            </SplitPane>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <HBox id="HBox" alignment="CENTER" layoutX="0.0" layoutY="-1.0" spacing="5.0">
+              <children>
+                <Button fx:id="goToHVStats" font="$x1" mnemonicParsing="false" onAction="#toHVStats" prefHeight="120.0" prefWidth="426.7" text="HV Statistics">
+                  <stylesheets>
+                    <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                  </stylesheets>
+                </Button>
+                <Button fx:id="goToEngineStats" font="$x1" mnemonicParsing="false" onAction="#toEngineStats" prefHeight="120.0" prefWidth="426.7" text="Engine Statistics">
+                  <stylesheets>
+                    <URL value="@controlsystem.css" />
+                  </stylesheets>
+                </Button>
+                <Button fx:id="goToMain" font="$x1" mnemonicParsing="false" onAction="#toMain" prefHeight="120.0" prefWidth="426.7" text="Main">
+                  <stylesheets>
+                    <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/controlsystem.css" />
+                  </stylesheets>
+                </Button>
+              </children>
+            </HBox>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+  <stylesheets>
+    <URL value="@controlsystem.css" />
+  </stylesheets>
+</AnchorPane>

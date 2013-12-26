@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="dashone.EngineStatsController">
+  <children>
+    <SplitPane dividerPositions="0.8328690807799443" focusTraversable="true" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <SplitPane dividerPositions="0.15008431703204048" focusTraversable="true" orientation="VERTICAL" prefHeight="595.0" prefWidth="1278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                  <children>
+                    <Label layoutX="14.0" layoutY="14.0" prefHeight="73.0" prefWidth="318.0" text="ENGINE STATISTICS">
+                      <font>
+                        <Font name="System Bold" size="30.0" />
+                      </font>
+                    </Label>
+                  </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                  <children>
+                    <SplitPane dividerPositions="0.33516483516483514" focusTraversable="true" prefHeight="501.0" prefWidth="1276.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                          <children>
+                            <Group id="Group" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                              <children>
+                                <Label layoutX="0.0" layoutY="0.0" prefHeight="55.0" prefWidth="220.0" text="Engine Stats">
+                                  <font>
+                                    <Font name="System Bold" size="20.0" fx:id="x2" />
+                                  </font>
+                                </Label>
+                                <TextArea fx:id="engineStatsField" editable="false" layoutX="0.0" layoutY="55.0" prefHeight="417.0" prefWidth="396.0" wrapText="true" />
+                              </children>
+                            </Group>
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                          <children>
+                            <Group id="Group" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="97.0" AnchorPane.topAnchor="14.0">
+                              <children>
+                                <Label font="$x2" layoutX="0.0" layoutY="0.0" prefHeight="55.0" prefWidth="220.0" text="Engine Overrides" />
+                                <VBox id="VBox" alignment="CENTER" layoutX="83.0" layoutY="106.0" spacing="25.0">
+                                  <children>
+                                    <HBox id="HBox" alignment="CENTER" spacing="25.0">
+                                      <children>
+                                        <Button fx:id="override1" font="$x2" mnemonicParsing="false" onAction="#overridePressed" prefHeight="75.0" prefWidth="200.0" text="Override 1">
+                                          <stylesheets>
+                                            <URL value="@enginestats.css" />
+                                          </stylesheets>
+                                        </Button>
+                                        <Button fx:id="override2" font="$x2" mnemonicParsing="false" onAction="#overridePressed" prefHeight="75.0" prefWidth="200.0" text="Override 2">
+                                          <stylesheets>
+                                            <URL value="@enginestats.css" />
+                                          </stylesheets>
+                                        </Button>
+                                        <Button fx:id="override3" font="$x2" mnemonicParsing="false" onAction="#overridePressed" prefHeight="75.0" prefWidth="200.0" text="Override 3">
+                                          <stylesheets>
+                                            <URL value="@enginestats.css" />
+                                          </stylesheets>
+                                        </Button>
+                                      </children>
+                                    </HBox>
+                                    <HBox id="HBox" alignment="CENTER" spacing="25.0">
+                                      <children>
+                                        <Button fx:id="override4" font="$x2" mnemonicParsing="false" onAction="#overridePressed" prefHeight="75.0" prefWidth="200.0" text="Override 4">
+                                          <stylesheets>
+                                            <URL value="@enginestats.css" />
+                                          </stylesheets>
+                                        </Button>
+                                        <Button fx:id="override5" font="$x2" mnemonicParsing="false" onAction="#overridePressed" prefHeight="75.0" prefWidth="200.0" text="Override 5">
+                                          <stylesheets>
+                                            <URL value="@enginestats.css" />
+                                          </stylesheets>
+                                        </Button>
+                                        <Button fx:id="override6" font="$x2" mnemonicParsing="false" onAction="#overridePressed" prefHeight="75.0" prefWidth="200.0" text="Override 6">
+                                          <stylesheets>
+                                            <URL value="@enginestats.css" />
+                                          </stylesheets>
+                                        </Button>
+                                      </children>
+                                    </HBox>
+                                    <HBox id="HBox" alignment="CENTER" spacing="25.0">
+                                      <children>
+                                        <Button fx:id="override7" font="$x2" mnemonicParsing="false" onAction="#overridePressed" prefHeight="75.0" prefWidth="200.0" text="Override 7">
+                                          <stylesheets>
+                                            <URL value="@enginestats.css" />
+                                          </stylesheets>
+                                        </Button>
+                                        <Button fx:id="override8" font="$x2" mnemonicParsing="false" onAction="#overridePressed" prefHeight="75.0" prefWidth="200.0" text="Override 8">
+                                          <stylesheets>
+                                            <URL value="@enginestats.css" />
+                                          </stylesheets>
+                                        </Button>
+                                        <Button fx:id="override9" font="$x2" mnemonicParsing="false" onAction="#overridePressed" prefHeight="75.0" prefWidth="200.0" text="Override 9">
+                                          <stylesheets>
+                                            <URL value="@enginestats.css" />
+                                          </stylesheets>
+                                        </Button>
+                                      </children>
+                                    </HBox>
+                                  </children>
+                                </VBox>
+                              </children>
+                            </Group>
+                          </children>
+                        </AnchorPane>
+                      </items>
+                    </SplitPane>
+                  </children>
+                </AnchorPane>
+              </items>
+            </SplitPane>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <Group id="Group" layoutX="0.0" layoutY="-3.0">
+              <children>
+                <HBox id="HBox" alignment="CENTER" layoutX="0.0" layoutY="0.0" spacing="5.0">
+                  <children>
+                    <Button id="goToMain" fx:id="goToHVStats" mnemonicParsing="false" onAction="#toHVStats" prefHeight="120.0" prefWidth="426.0" styleClass="mainEngineStatsFxmlClass" text="HV Statistics">
+                      <font>
+                        <Font name="System Bold" size="25.0" fx:id="x1" />
+                      </font>
+                      <stylesheets>
+                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/enginestats.css" />
+                      </stylesheets>
+                    </Button>
+                    <Button id="goToMain" fx:id="goToControlSystem" font="$x1" mnemonicParsing="false" onAction="#toControlSystem" prefHeight="120.0" prefWidth="426.0" styleClass="mainEngineStatsFxmlClass" text="Control System">
+                      <stylesheets>
+                        <URL value="file:/Z:/NetBeansProjects/DashOne/src/dashone/enginestats.css" />
+                      </stylesheets>
+                    </Button>
+                    <Button fx:id="goToMain" font="$x1" mnemonicParsing="false" onAction="#toMain" prefHeight="120.0" prefWidth="426.0" styleClass="mainEngineStatsFxmlClass" text="Main">
+                      <stylesheets>
+                        <URL value="@enginestats.css" />
+                      </stylesheets>
+                    </Button>
+                  </children>
+                </HBox>
+              </children>
+            </Group>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+  <stylesheets>
+    <URL value="@enginestats.css" />
+  </stylesheets>
+</AnchorPane>
